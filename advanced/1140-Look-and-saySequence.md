@@ -1,4 +1,4 @@
-# **1140** Look-and-say Sequence
+# 1140 Look-and-say Sequence
 
 Look-and-say sequence is a sequence of integers as the following:
 

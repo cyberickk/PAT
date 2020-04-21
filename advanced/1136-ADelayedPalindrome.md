@@ -1,4 +1,4 @@
-# **1136** A Delayed Palindrome
+# 1136 A Delayed Palindrome
 
 Consider a positive integer *N* written in standard notation with *k*+1 digits *a**i* as *a**k*⋯*a*1*a*0 with 0≤*a**i*<10 for all *i* and *a**k*>0. Then *N* is **palindromic** if and only if *a**i*=*a**k*−*i* for all *i*. Zero is written 0 and is also palindromic by definition.
 

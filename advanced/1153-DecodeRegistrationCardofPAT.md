@@ -1,4 +1,4 @@
-# **1153** Decode Registration Card of PAT
+# 1153 Decode Registration Card of PAT
 
 A registration card number of PAT consists of 4 parts:
 
