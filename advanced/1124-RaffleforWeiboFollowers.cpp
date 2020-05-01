@@ -6,31 +6,32 @@ using namespace std;
 int main() {
 	int m, n, s;
 	cin >> m >> n >> s;
-	if(s > m) {
-		cout << "Keep going...\n";
-		return 0;
-	}
 	set<string> win;
-	string id;
-	for(int i = 1; i < s; ++i) {
-		cin >> id;
-	}	
-	cin >> id;
-	cout << "2" << id << endl;
-	win.insert(id);
+	string id;	
 	int cnt = 0;
-	for(int i = 0; i < m-s; ++i) {		
+	for(int i = 1; i <= m; ++i) {		
 		cin >> id;
-		cnt++;
-		if(cnt == n) {
-			if(win.count(id)) 
-				cnt--;
-			else {
-				win.insert(id);
-				cout << "2" << id << endl;
-				cnt = 1;
-			}
+		if(i < s) {
+			continue;
 		}
+		else if(i == s) {
+			cout << id << endl;	
+			win.insert(id);		
+		}
+		else {
+			cnt++;
+			if(cnt == n) {
+				if(win.count(id)) 
+					cnt--;
+				else {
+					win.insert(id);
+					cout << id << endl;
+					cnt = 0;
+				}
+			}
+		}		
 	}
+	if(win.size() == 0) 
+		cout << "Keep going..." << endl;
 	return 0;
 }
